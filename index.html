@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Motivational App</title>
+		<style>
+			*{font-size:50px;font-family:calibri}
+			body{background-color:linen;}
+			h2{border:solid;width:70%;border-radius:30px;}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1>Motivational App</h1>
+			<form onsubmit="show()">
+			<input type="submit" value="Get msg">
+			</form>
+			<h2 id="msg"/>
+			<script>
+				function show()
+					{
+						event.preventDefault();
+						let msg=document.getElementById("msg");
+						let data =["just do it","you will win","all the best","trust the process","i did it"];
+						let r=parseInt(Math.random()*data.length);
+						msg.innerHTML=data[r];
+
+
+					}
+			</script>
+		</center>
+	</body>
+
+
+
+
+
+
+
+</html>
